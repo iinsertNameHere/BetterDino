@@ -4,7 +4,7 @@ window.addEventListener("keydown", checkKeyPressed, false); function checkKeyPre
 Runner.prototype.oGameOver = Runner.prototype.gameOver;
 Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
 
-$('body').append("<script id='betterdino_def'>" +
+$('body').append("<script>" +
 "function drawlaser() {" +
 "if (Runner.instance_.horizon.obstacles.length>0){" +
 "Runner.instance_.clearCanvas=function(){};" +
@@ -15,9 +15,6 @@ $('body').append("<script id='betterdino_def'>" +
 "setTimeout(function(){Runner.instance_.clearCanvas = b;}, 35);" +
 "Runner.instance_.horizon.obstacles = [];" +
 "}}" +
-"</script>");
-
-$('body').append("<script id='betterdino_functions'>" +
 "function godmodeon(){" +
 "Runner.prototype.gameOver = function(){};" +
 "document.getElementById('gms').innerText = 'On';" +
@@ -41,7 +38,7 @@ $('body').append("<script id='betterdino_functions'>" +
 "}" +
 "</script>");
 
-$('body').append("<style id='betterdino_style'>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
+$('body').append("<style>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
 
 $('html').append("<div id='top'>" +
 "<button onclick='godmodeon()'>GodMode On</button>" +
