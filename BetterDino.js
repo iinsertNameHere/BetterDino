@@ -43,7 +43,7 @@ $('html').append(
 
 $('html').append("<style id='betterdino_style'>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
 
-('html').append(
+$('html').append(
 "<div id='top'>" +
 "<button onclick='godmodeon()'>GodMode On</button>" +
 "<button onclick='godmodeoff()'>GodMode Off</button>" +
