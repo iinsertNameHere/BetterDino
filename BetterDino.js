@@ -12,8 +12,11 @@ function drawlaser() {
    }
 }
 
-$('head').append("<p><a href='javascript:(function(){Runner.prototype.oGameOver = Runner.prototype.gameOver;Runner.instance_.oSpeed = Runner.instance_.currentSpeed;alert('Setup Finished!');})()'>Setup</a></p>");
+Runner.prototype.oGameOver = Runner.prototype.gameOver;
+Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
+
 $('head').append("<p><a href='javascript:(function(){Runner.prototype.gameOver = Runner.prototype.oGameOver;console.log('GoodMode: Off');})()'>GoodMode Off</a></p>");
 $('head').append("<p><a href='javascript:(function(){var speed = parseInt(prompt('Enter Speed Value:', '0'));Runner.instance_.setSpeed(speed);console.log('Changed Speed');})()'>Set Speed</a></p>");
 $('head').append("<p><a href='javascript:(function(){Runner.instance_.setSpeed(Runner.instance_.oSpeed);console.log('SetSpeed: Normal');})()'>Reset Speed</a></p>");
 
+alert('Setup Finished!');
