@@ -12,10 +12,38 @@ function drawlaser() {
    }
 }
 
+function goodmodeon(){
+   Runner.prototype.gameOver = function(){};
+   console.log('GoodMode: On');
+}
+
+function goodmodeoff(){
+   Runner.prototype.gameOver = Runner.prototype.oGameOver;
+   console.log('GoodMode: Off');
+}
+
+function setspeed(){
+   var speed = parseInt(prompt('Enter Speed Value:', '0'));
+   Runner.instance_.setSpeed(speed);
+   console.log('Changed Speed');
+}
+
+function resetspeed(){
+   Runner.instance_.setSpeed(Runner.instance_.oSpeed);
+   console.log('SetSpeed: Normal');
+}
+
 Runner.prototype.oGameOver = Runner.prototype.gameOver;
 Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
 
 $('body').append("<style>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
-$('html').append("<div id='top'><p><button onClick='Runner.prototype.gameOver = function(){};console.log('GoodMode: On');'>GoodMode On</button></p><p><button onClick='Runner.prototype.gameOver = Runner.prototype.oGameOver;console.log('GoodMode: Off');'>GoodMode Off</button></p><p><button onClick='var speed = parseInt(prompt('Enter Speed Value:', '0'));Runner.instance_.setSpeed(speed);console.log('Changed Speed');'>Set Speed</button></p><p><button onClick='Runner.instance_.setSpeed(Runner.instance_.oSpeed);console.log('SetSpeed: Normal');'>Reset Speed</button></p></div>");
+$('html').append(
+   "<div id='top'>" +
+   "<button onClick='goodmodeon()'>GoodMode On</button>" +
+   "<button onClick='goodmodeoff()'>GoodMode Off</button>" +
+   "<button onClick='setspeed()'>Set Speed</button>" +
+   "<button onClick='resetspeed()'>Reset Speed</button>" +
+   "</div>"
+);
 
-alert('Setup Finished!');
+alert('BetterDino Loaded!');
