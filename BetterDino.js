@@ -12,29 +12,31 @@ function drawlaser() {
    }
 }
 
-function godmodeon(){
-   Runner.prototype.gameOver = function(){};
-   console.log('GodMode: On');
-}
-
-function godmodeoff(){
-   Runner.prototype.gameOver = Runner.prototype.oGameOver;
-   console.log('GodMode: Off');
-}
-
-function setspeed(){
-   var speed = parseInt(prompt('Enter Speed Value:', '0'));
-   Runner.instance_.setSpeed(speed);
-   console.log('Changed Speed');
-}
-
-function resetspeed(){
-   Runner.instance_.setSpeed(Runner.instance_.oSpeed);
-   console.log('SetSpeed: Normal');
-}
-
 Runner.prototype.oGameOver = Runner.prototype.gameOver;
 Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
+
+$('body').append(
+"<script>" +
+"function godmodeon(){" +
+"Runner.prototype.gameOver = function(){};" +
+"console.log('GodMode: On');" +
+"}" +
+"function godmodeoff(){" +
+"Runner.prototype.gameOver = Runner.prototype.oGameOver;" +
+"console.log('GodMode: Off');" +
+"}" +
+"function setspeed(){" +
+"var speed = parseInt(prompt('Enter Speed Value:', '0'));" +
+"Runner.instance_.setSpeed(speed);" +
+"console.log('Changed Speed');" +
+"}" +
+
+"function resetspeed(){" +
+"Runner.instance_.setSpeed(Runner.instance_.oSpeed);" +
+"console.log('SetSpeed: Normal');" +
+"}" +
+"</script>"
+);
 
 $('body').append("<style>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
 $('html').append(
