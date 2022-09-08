@@ -45,6 +45,7 @@ $('html').append(
    "<button onclick='godmodeoff()'>GodMode Off</button>" +
    "<button onclick='setspeed()'>Set Speed</button>" +
    "<button onclick='resetspeed()'>Reset Speed</button>" +
+   "<p>Press D to shoot lasers!</p>" +
    "</div>"
 );
 
