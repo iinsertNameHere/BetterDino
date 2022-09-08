@@ -16,6 +16,6 @@ Runner.prototype.oGameOver = Runner.prototype.gameOver;
 Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
 
 $('body').append("<style>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
-$('html').append("<div id='top'><p style=''><a href='javascript:(function(){Runner.prototype.gameOver = Runner.prototype.oGameOver;console.log('GoodMode: Off');})()'>GoodMode Off</a></p><p><a href='javascript:(function(){var speed = parseInt(prompt('Enter Speed Value:', '0'));Runner.instance_.setSpeed(speed);console.log('Changed Speed');})()'>Set Speed</a></p><p><a href='javascript:(function(){Runner.instance_.setSpeed(Runner.instance_.oSpeed);console.log('SetSpeed: Normal');})()'>Reset Speed</a></p></div>");
+$('html').append("<div id='top'><p><a href='javascript:(function(){Runner.prototype.gameOver = function(){};console.log('GoodMode: On');})()'>GoodMode On</a></p><p><a href='javascript:(function(){Runner.prototype.gameOver = Runner.prototype.oGameOver;console.log('GoodMode: Off');})()'>GoodMode Off</a></p><p><a href='javascript:(function(){var speed = parseInt(prompt('Enter Speed Value:', '0'));Runner.instance_.setSpeed(speed);console.log('Changed Speed');})()'>Set Speed</a></p><p><a href='javascript:(function(){Runner.instance_.setSpeed(Runner.instance_.oSpeed);console.log('SetSpeed: Normal');})()'>Reset Speed</a></p></div>");
 
 alert('Setup Finished!');
