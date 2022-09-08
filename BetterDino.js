@@ -17,7 +17,7 @@ $('body').append(
 "Runner.instance_.horizon.obstacles = [];" +
 "}}" +
 "</script>"
-)
+);
 
 $('body').append(
 "<script id='betterdino_functions'>" +
