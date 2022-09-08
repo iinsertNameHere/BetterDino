@@ -1,4 +1,4 @@
-var b = Runner.instance_.clearCanvas;
+b = Runner.instance_.clearCanvas;
 window.addEventListener("keydown", checkKeyPressed, false); function checkKeyPressed(l) { if (l.keyCode == "68" ) {drawlaser()}};
 
 Runner.prototype.oGameOver = Runner.prototype.gameOver;
