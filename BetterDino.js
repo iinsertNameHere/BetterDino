@@ -23,19 +23,23 @@ $('body').append(
 "<script id='betterdino_functions'>" +
 "function godmodeon(){" +
 "Runner.prototype.gameOver = function(){};" +
+"document.getElementById('gm_s').innerText = 'On';" +
 "console.log('GodMode: On');" +
 "}" +
 "function godmodeoff(){" +
 "Runner.prototype.gameOver = Runner.prototype.oGameOver;" +
+"document.getElementById('gm_s').innerText = 'Off';" +
 "console.log('GodMode: Off');" +
 "}" +
 "function setspeed(){" +
 "var speed = parseInt(prompt('Enter Speed Value:', '0'));" +
 "Runner.instance_.setSpeed(speed);" +
+"document.getElementById('sp_s').innerText = speed" +
 "console.log('Changed Speed');" +
 "}" +
 "function resetspeed(){" +
 "Runner.instance_.setSpeed(Runner.instance_.oSpeed);" +
+"document.getElementById('sp_s').innerText = 'Normal'" +
 "console.log('SetSpeed: Normal');" +
 "}" +
 "</script>"
@@ -50,6 +54,8 @@ $('html').append(
 "<button onclick='setspeed()'>Set Speed</button>" +
 "<button onclick='resetspeed()'>Reset Speed</button>" +
 "<p>Press D to shoot lasers!</p>" +
+"<p>GodMode: <p id='gm_s'>Off</p></p>" +
+"<p>Speed: <p id='sp_s'>Normal</p></p>" +
 "</div>"
 );
 
