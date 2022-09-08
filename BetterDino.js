@@ -16,8 +16,7 @@ $('body').append(
 "setTimeout(function(){Runner.instance_.clearCanvas = b;}, 35);" +
 "Runner.instance_.horizon.obstacles = [];" +
 "}}" +
-"</script>"
-);
+"</script>");
 
 $('body').append(
 "<script id='betterdino_functions'>" +
@@ -42,8 +41,7 @@ $('body').append(
 "document.getElementById('godmodeStatus').innerText = 'Normal';" +
 "console.log('SetSpeed: Normal');" +
 "}" +
-"</script>"
-);
+"</script>");
 
 $('head').append("<style id='betterdino_style'>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
 
@@ -56,7 +54,6 @@ $('body').append(
 "<p>Press D to shoot lasers!</p>" +
 "<p id='godmodeStatus' style='color: blue'>GodMode: Off</p>" +
 "<p id='speedStatus' style='color: blue'>Speed: Normal</p>" +
-"</div>"
-);
+"</div>");
 
 alert('BetterDino Loaded!');
