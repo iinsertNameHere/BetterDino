@@ -33,12 +33,12 @@ $('body').append(
 "function setspeed(){" +
 "var speed = parseInt(prompt('Enter Speed Value:', '0'));" +
 "Runner.instance_.setSpeed(speed);" +
-"document.getElementById('godmodeStatus').innerText = speed.toString();" +
+"document.getElementById('speedStatus').innerText = 'Speed: ' + speed.toString();" +
 "console.log('Changed Speed');" +
 "}" +
 "function resetspeed(){" +
 "Runner.instance_.setSpeed(Runner.instance_.oSpeed);" +
-"document.getElementById('godmodeStatus').innerText = 'Normal';" +
+"document.getElementById('speedStatus').innerText = 'Speed: Normal';" +
 "console.log('SetSpeed: Normal');" +
 "}" +
 "</script>");
