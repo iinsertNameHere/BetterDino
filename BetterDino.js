@@ -55,7 +55,7 @@ $('body').append(
 "<button onclick='resetspeed()'>Reset Speed</button>" +
 "<p>Press D to shoot lasers!</p>" +
 "<p id='godmodeStatus' style='color: blue'>GodMode: Off</p>" +
-"<p id='speedStatus' style='color: blue'>Speed: Normal</p>"
+"<p id='speedStatus' style='color: blue'>Speed: Normal</p>" +
 "</div>"
 );
 
