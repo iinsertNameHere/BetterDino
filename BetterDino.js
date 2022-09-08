@@ -39,10 +39,10 @@ Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
 $('body').append("<style>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
 $('html').append(
    "<div id='top'>" +
-   "<button onClick='godmodeon()'>GodMode On</button>" +
-   "<button onClick='godmodeoff()'>GodMode Off</button>" +
-   "<button onClick='setspeed()'>Set Speed</button>" +
-   "<button onClick='resetspeed()'>Reset Speed</button>" +
+   "<button onclick='godmodeon()'>GodMode On</button>" +
+   "<button onclick='godmodeoff()'>GodMode Off</button>" +
+   "<button onclick='setspeed()'>Set Speed</button>" +
+   "<button onclick='resetspeed()'>Reset Speed</button>" +
    "</div>"
 );
 
