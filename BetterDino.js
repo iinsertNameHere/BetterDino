@@ -12,14 +12,14 @@ function drawlaser() {
    }
 }
 
-function goodmodeon(){
+function godmodeon(){
    Runner.prototype.gameOver = function(){};
-   console.log('GoodMode: On');
+   console.log('GodMode: On');
 }
 
-function goodmodeoff(){
+function godmodeoff(){
    Runner.prototype.gameOver = Runner.prototype.oGameOver;
-   console.log('GoodMode: Off');
+   console.log('GodMode: Off');
 }
 
 function setspeed(){
@@ -39,8 +39,8 @@ Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
 $('body').append("<style>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
 $('html').append(
    "<div id='top'>" +
-   "<button onClick='goodmodeon()'>GoodMode On</button>" +
-   "<button onClick='goodmodeoff()'>GoodMode Off</button>" +
+   "<button onClick='godmodeon()'>GodMode On</button>" +
+   "<button onClick='godmodeoff()'>GodMode Off</button>" +
    "<button onClick='setspeed()'>Set Speed</button>" +
    "<button onClick='resetspeed()'>Reset Speed</button>" +
    "</div>"
