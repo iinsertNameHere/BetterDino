@@ -63,7 +63,7 @@ $('body').append(
 "}" +
 "function darkskin(){" +
 "Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x-black.png'" +
-//"document.body.style.backgroundColor = '#000';" +
+"document.body.style.backgroundColor = '#000';" +
 //"document.getElementById('d_info').style.color = 'white';" +
 "}" +
 "function coloredskin(){" +
