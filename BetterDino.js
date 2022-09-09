@@ -43,14 +43,46 @@ $('body').append(
 "}" +
 "</script>");
 
-$('head').append("<style id='betterdino_style'>#top {position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 23px;}</style>")
+$('head').append(
+"<style id='betterdino_style'>" +
+"#top {" +
+"position: fixed;" +
+"top: 0;" +
+"left: 0;" +
+"z-index: 999;" +
+"width: 100%;" +
+"height: 23px;"+
+"}\n" +
+".nav-ul {" +
+"list-style-type: none;"+
+"margin: 0;" +
+"padding: 0;" +
+"overflow: hidden;" +
+"background-color: #333;" +
+"}\n" +
+".nav-li {" +
+"float: left;" +
+"}\n" +
+".nav-li a {" +
+"display: block;" +
+"color: white;" +
+"text-align: center;" +
+"padding: 14px 16px;" +
+"text-decoration: none;" +
+"}\n" +
+"nav.li a:hover {" +
+"background-color: #111;" +
+"}" +
+"</style>");
 
 $('body').append(
 "<div id='top'>" +
-"<button onclick='godmodeon()'>GodMode On</button>" +
-"<button onclick='godmodeoff()'>GodMode Off</button>" +
-"<button onclick='setspeed()'>Set Speed</button>" +
-"<button onclick='resetspeed()'>Reset Speed</button>" +
+"<ul class='nav-ul'>" +
+"<li class='nac-li'><a onclick='godmodeon()'>GodMode On</a></li>" +
+"<li class='nac-li'><a onclick='godmodeoff()'>GodMode Off</a><li>" +
+"<li class='nac-li'><a onclick='setspeed()'>Set Speed</a><li>" +
+"<li class='nac-li'><a onclick='resetspeed()'>Reset Speed</a><li>" +
+"</ul>" +
 "<p>Press D to shoot lasers!</p>" +
 "<p>GodMode: <span id='godmodeStatus' style='color: blue'>Off</span></p>" +
 "<p>Speed: <span id='speedStatus' style='color: blue'>Normal</span></p>" +
