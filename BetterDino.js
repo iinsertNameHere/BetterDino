@@ -25,7 +25,7 @@ $('body').append(
 "if (Runner.instance_.godmode) {" +
 "Runner.instance_.godmode = false; _godmodeOff();" +
 "} else {" +
-"Runner.instance_.godmode = true; godmodeon();" +
+"Runner.instance_.godmode = true; godmodeOn();" +
 "}}" +
 "function _godmodeOn(){" +
 "Runner.prototype.gameOver = function(){};" +
