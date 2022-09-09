@@ -42,9 +42,15 @@ $('body').append(
 "Runner.instance_.setSpeed(speed);" +
 "console.log('SetSpeed: ' + speed.toString());" +
 "}" +
-"function resetspeed(){" +
+"function resetplayer(){" +
 "Runner.instance_.setSpeed(Runner.instance_.oSpeed);" +
 "console.log('SetSpeed: Normal');" +
+"}" +
+"function gameover(){" +
+"var gmOn = Runner.instance_.godmode;" +
+"if (gmOn) {_godmodeOff();}" +
+"Runner.instance_.gameOver();" +
+"if (gmOn) {_godmodeOn();}"+
 "}" +
 "</script>");
 
@@ -85,7 +91,7 @@ $('body').append(
 "<ul class='nav-ul'>" +
 "<li class='nav-li'><a onclick='godmode()'>GodMode <span id='gms' style='color: blue'>Off</span></a></li>" +
 "<li class='nav-li'><a onclick='setspeed()'>Set Speed</a><li>" +
-"<li class='nav-li'><a onclick='resetspeed()'>Reset Speed</a><li>" +
+"<li class='nav-li'><a onclick='resetplayer()'>Reset Player</a><li>" +
 "</ul>" +
 "<p>Press D to shoot lasers!</p>" +
 "</div>");
