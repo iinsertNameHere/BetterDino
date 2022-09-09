@@ -57,29 +57,29 @@ $('body').append(
 "console.log('GameOver');" +
 "}" +
 "function lightskin(){" +
-"Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x.png'" +
-//"document.body.style.backgroundColor = '#f7f7f7';" +
-//"document.getElementById('d_info').style.color = '#333';" +
+"Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x.png';" +
+"document.body.style.backgroundColor = '#f7f7f7';" +
+"document.getElementById('d_info').style.color = '#333';" +
 "}" +
 "function darkskin(){" +
-"Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x-black.png'" +
+"Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x-black.png';" +
 "document.body.style.backgroundColor = '#000';" +
-//"document.getElementById('d_info').style.color = 'white';" +
+"document.getElementById('d_info').style.color = 'white';" +
 "}" +
 "function coloredskin(){" +
-"Runner.imageSprite.src = 'https://chromedino.com/assets/chromedino_coloured-1x.png'" +
-//"document.body.style.backgroundColor = '#f7f7f7';" +
-//"document.getElementById('d_info').style.color = '#333';" +
+"Runner.imageSprite.src = 'https://chromedino.com/assets/chromedino_coloured-1x.png';" +
+"document.body.style.backgroundColor = '#f7f7f7';" +
+"document.getElementById('d_info').style.color = '#333';" +
 "}" +
 "function marioskin(){" +
-"Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x-mario.png'" +
-//"document.body.style.backgroundColor = '#75a5f9';" +
-//"document.getElementById('d_info').style.color = '#333';" +
+"Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x-mario.png';" +
+"document.body.style.backgroundColor = '#75a5f9';" +
+"document.getElementById('d_info').style.color = '#333';" +
 "}" +
 "function batmanskin(){" +
 "Runner.imageSprite.src = 'https://chromedino.com/assets/batman1x.png';" +
-//"document.body.style.backgroundColor = '#000';" +
-//"document.getElementById('d_info').style.color = 'white';" +
+"document.body.style.backgroundColor = '#000';" +
+"document.getElementById('d_info').style.color = 'white';" +
 "}" +
 "</script>");
 
