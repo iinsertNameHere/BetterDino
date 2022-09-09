@@ -1,10 +1,11 @@
-var b = Runner.instance_.clearCanvas;
+b = Runner.instance_.clearCanvas;
 window.addEventListener("keydown", checkKeyPressed, false); function checkKeyPressed(l) { if (l.keyCode == "68" ) {drawlaser()}};
 
 Runner.prototype.oGameOver = Runner.prototype.gameOver;
 Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
 Runner.instance_.godmode = false;
 
+var contentDiv = document.createElement('div');
 $('body').append(
 "<script id='betterdino_def'>" +
 "function drawlaser() {" +
