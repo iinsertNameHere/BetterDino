@@ -55,6 +55,21 @@ $('body').append(
 "if (gmOn) {_godmodeOn();}"+
 "console.log('GameOver');" +
 "}" +
+"function lightskin(){" +
+"Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x.png'" +
+"}" +
+"function darkskin(){" +
+"Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x-black.png'" +
+"}" +
+"function coloredskin(){" +
+"Runner.imageSprite.src = 'https://chromedino.com/assets/chromedino_coloured-1x.png'" +
+"}" +
+"function marioskin(){" +
+"Runner.imageSprite.src = 'https://chromedino.com/assets/offline-sprite-1x-mario.png'" +
+"}" +
+"function batmanskin(){" +
+"Runner.imageSprite.src = 'https://chromedino.com/assets/batman1x.png';" +
+"}" +
 "</script>");
 
 $('head').append(
@@ -86,7 +101,35 @@ $('head').append(
 "}\n" +
 ".nav-li a:hover {" +
 "background-color: #111;" +
-"}" +
+"}\n" +
+".dropbtn {" +
+"background-color: #04AA6D;" +
+"color: white;" +
+"padding: 16px;" +
+"font-size: 16px;" +
+"border: none;" +
+"}\n" +
+".dropdown {" +
+"position: relative;" +
+"display: inline-block;" +
+"}\n" +
+".dropdown-content {" +
+"display: none;" +
+"position: absolute;" +
+"background-color: #f1f1f1;" +
+"min-width: 160px;" +
+"box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);" +
+"z-index: 1;" +
+"}\n" +
+".dropdown-content a {" +
+"color: black;" +
+"padding: 12px 16px;" +
+"text-decoration: none;" +
+"display: block;" +
+"}\n" +
+".dropdown-content a:hover {background-color: #ddd;}\n" +
+".dropdown:hover .dropdown-content {display: block;}\n" +
+".dropdown:hover .dropbtn {background-color: #3e8e41;}\n" +
 "</style>");
 
 $('body').append(
@@ -98,6 +141,15 @@ $('body').append(
 "<li class='nav-li'><a onclick='gameover()'>GameOver</a><li>" +
 "</ul>" +
 "<p>Press D to shoot lasers!</p>" +
+"<div class='dropdown'>" +
+"<button class='dropbtn'>Change Skin</button>" +
+"<div class='dropdown-content'>" +
+"<a onclick='lightskin()'>Light (Normal)</a>" +
+"<a onclick='darkskin()'>Dark</a>" +
+"<a onclick='coloredskin()'>Colored</a>" +
+"<a onclick='marioskin()'>Mario</a>" +
+"<a onclick='batmanskin()'>Batman</a>" +
+"</div></div>" +
 "</div>");
 
 alert('BetterDino Loaded!');
