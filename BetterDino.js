@@ -13,6 +13,7 @@ $('body').append(
 "Runner.instance_.canvasCtx.beginPath();" +
 "Runner.instance_.canvasCtx.moveTo(Runner.instance_.tRex.xPos+23,Runner.instance_.tRex.yPos+20);" +
 "Runner.instance_.canvasCtx.lineTo(Runner.instance_.horizon.obstacles[0].xPos+10,Runner.instance_.horizon.obstacles[0].yPos+10);" +
+"Runner.instance_.canvasCtx.strokeStyle = 'Red';" +
 "Runner.instance_.canvasCtx.stroke();" +
 "setTimeout(function(){Runner.instance_.clearCanvas = b;}, 35);" +
 "Runner.instance_.horizon.obstacles = [];" +
@@ -69,6 +70,9 @@ $('body').append(
 "}" +
 "function batmanskin(){" +
 "Runner.imageSprite.src = 'https://chromedino.com/assets/batman1x.png';" +
+"}" +
+"function flappyskin(){" +
+"Runner.imageSprite.src = 'https://raw.githubusercontent.com/CenTdemeern1/Chrome-Dino-Cheats/master/flappybird.png';" +
 "}" +
 "</script>");
 
@@ -135,12 +139,12 @@ $('head').append(
 $('body').append(
 "<div id='top'>" +
 "<ul class='nav-ul'>" +
-"<li class='nav-li'><a onclick='godmode()'>GodMode <span id='gms' style='color: blue'>Off</span></a></li>" +
+"<li class='nav-li'><a onclick='godmode()'>GodMode <span id='gms' style='color: #04AA6D'>Off</span></a></li>" +
 "<li class='nav-li'><a onclick='setspeed()'>Set Speed</a><li>" +
 "<li class='nav-li'><a onclick='resetplayer()'>Reset Player</a><li>" +
 "<li class='nav-li'><a onclick='gameover()'>GameOver</a><li>" +
 "</ul>" +
-"<p>Press D to shoot lasers!</p>" +
+"<p>Press <span id='gms' style='color: #04AA6D'>D</span> to shoot lasers!</p>" +
 "<div class='dropdown'>" +
 "<button class='dropbtn'>Change Skin</button>" +
 "<div class='dropdown-content'>" +
@@ -149,6 +153,7 @@ $('body').append(
 "<a onclick='coloredskin()'>Colored</a>" +
 "<a onclick='marioskin()'>Mario</a>" +
 "<a onclick='batmanskin()'>Batman</a>" +
+"<a onclick='flappyskin()'>Flappybird</a>" +
 "</div></div>" +
 "</div>");
 
