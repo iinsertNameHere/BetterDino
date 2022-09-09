@@ -25,16 +25,16 @@ $('body').append(
 "if (Runner.instance_.godmode) {" +
 "Runner.instance_.godmode = false; _godmodeOff();" +
 "} else {" +
-"Runner.instance_.godmode = true; godmodeOn();" +
+"Runner.instance_.godmode = true; _godmodeOn();" +
 "}}" +
 "function _godmodeOn(){" +
 "Runner.prototype.gameOver = function(){};" +
-"document.getElementById('godmodeStatus').innerText = 'On';" +
+"document.getElementById('gms').innerText = 'On';" +
 "console.log('GodMode: On');" +
 "}" +
 "function _godmodeOff(){" +
 "Runner.prototype.gameOver = Runner.prototype.oGameOver;" +
-"document.getElementById('godmodeStatus').innerText = 'Off';" +
+"document.getElementById('gms').innerText = 'Off';" +
 "console.log('GodMode: Off');" +
 "}" +
 "function setspeed(){" +
