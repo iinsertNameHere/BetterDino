@@ -71,9 +71,6 @@ $('body').append(
 "function batmanskin(){" +
 "Runner.imageSprite.src = 'https://chromedino.com/assets/batman1x.png';" +
 "}" +
-"function flappyskin(){" +
-"Runner.imageSprite.src = 'https://raw.githubusercontent.com/CenTdemeern1/Chrome-Dino-Cheats/master/flappybird.png';" +
-"}" +
 "</script>");
 
 $('head').append(
@@ -153,7 +150,6 @@ $('body').append(
 "<a onclick='coloredskin()'>Colored</a>" +
 "<a onclick='marioskin()'>Mario</a>" +
 "<a onclick='batmanskin()'>Batman</a>" +
-"<a onclick='flappyskin()'>Flappybird</a>" +
 "</div></div>" +
 "</div>");
 
