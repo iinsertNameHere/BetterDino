@@ -142,6 +142,7 @@ $('body').append(
 "<li class='nav-li'><a onclick='gameover()'>GameOver</a><li>" +
 "</ul>" +
 "<p>Press <span id='gms' style='color: #04AA6D'>D</span> to shoot lasers!</p>" +
+"<button class='dropbtn' onclick='document.body.style.backgroundColor=prompt('Color Value (Text/Hex):','#f7f7f7');'>Background Color</button>" +
 "<div class='dropdown'>" +
 "<button class='dropbtn'>Change Skin</button>" +
 "<div class='dropdown-content'>" +
@@ -152,5 +153,7 @@ $('body').append(
 "<a onclick='batmanskin()'>Batman</a>" +
 "</div></div>" +
 "</div>");
+
+ document.body.style.backgroundColor = "red";
 
 alert('BetterDino Loaded!');
