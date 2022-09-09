@@ -70,7 +70,7 @@ $('head').append(
 "padding: 14px 16px;" +
 "text-decoration: none;" +
 "}\n" +
-"nav.li a:hover {" +
+".nav-li a:hover {" +
 "background-color: #111;" +
 "}" +
 "</style>");
@@ -78,10 +78,10 @@ $('head').append(
 $('body').append(
 "<div id='top'>" +
 "<ul class='nav-ul'>" +
-"<li class='nac-li'><a onclick='godmodeon()'>GodMode On</a></li>" +
-"<li class='nac-li'><a onclick='godmodeoff()'>GodMode Off</a><li>" +
-"<li class='nac-li'><a onclick='setspeed()'>Set Speed</a><li>" +
-"<li class='nac-li'><a onclick='resetspeed()'>Reset Speed</a><li>" +
+"<li class='nav-li'><a onclick='godmodeon()'>GodMode On</a></li>" +
+"<li class='nav-li'><a onclick='godmodeoff()'>GodMode Off</a><li>" +
+"<li class='nav-li'><a onclick='setspeed()'>Set Speed</a><li>" +
+"<li class='nav-li'><a onclick='resetspeed()'>Reset Speed</a><li>" +
 "</ul>" +
 "<p>Press D to shoot lasers!</p>" +
 "<p>GodMode: <span id='godmodeStatus' style='color: blue'>Off</span></p>" +
