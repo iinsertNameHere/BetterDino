@@ -3,6 +3,7 @@ window.addEventListener("keydown", checkKeyPressed, false); function checkKeyPre
 
 Runner.prototype.oGameOver = Runner.prototype.gameOver;
 Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
+Runner.instance_.godmode = false;
 
 $('body').append(
 "<script id='betterdino_def'>" +
@@ -20,12 +21,18 @@ $('body').append(
 
 $('body').append(
 "<script id='betterdino_functions'>" +
-"function godmodeon(){" +
+"function godmode() {" +
+"if (Runner.instance_.godmode) {
+"Runner.instance_.godmode = false; _godmodeOff();" +
+"} else {" +
+"Runner.instance_.godmode = true; godmodeon();" +
+"}}" +
+"function _godmodeOn(){" +
 "Runner.prototype.gameOver = function(){};" +
 "document.getElementById('godmodeStatus').innerText = 'On';" +
 "console.log('GodMode: On');" +
 "}" +
-"function godmodeoff(){" +
+"function _godmodeOff(){" +
 "Runner.prototype.gameOver = Runner.prototype.oGameOver;" +
 "document.getElementById('godmodeStatus').innerText = 'Off';" +
 "console.log('GodMode: Off');" +
@@ -33,12 +40,10 @@ $('body').append(
 "function setspeed(){" +
 "var speed = parseInt(prompt('Enter Speed Value:', '0'));" +
 "Runner.instance_.setSpeed(speed);" +
-"document.getElementById('speedStatus').innerText = speed.toString();" +
-"console.log('Changed Speed');" +
+"console.log('SetSpeed: ' + speed.toString());" +
 "}" +
 "function resetspeed(){" +
 "Runner.instance_.setSpeed(Runner.instance_.oSpeed);" +
-"document.getElementById('speedStatus').innerText = 'Normal';" +
 "console.log('SetSpeed: Normal');" +
 "}" +
 "</script>");
@@ -78,14 +83,11 @@ $('head').append(
 $('body').append(
 "<div id='top'>" +
 "<ul class='nav-ul'>" +
-"<li class='nav-li'><a onclick='godmodeon()'>GodMode On</a></li>" +
-"<li class='nav-li'><a onclick='godmodeoff()'>GodMode Off</a><li>" +
+"<li class='nav-li'><a onclick='godmode()'>GodMode <span id='gms' style='color: blue'>Off</span></a></li>" +
 "<li class='nav-li'><a onclick='setspeed()'>Set Speed</a><li>" +
 "<li class='nav-li'><a onclick='resetspeed()'>Reset Speed</a><li>" +
 "</ul>" +
 "<p>Press D to shoot lasers!</p>" +
-"<p>GodMode: <span id='godmodeStatus' style='color: blue'>Off</span></p>" +
-"<p>Speed: <span id='speedStatus' style='color: blue'>Normal</span></p>" +
 "</div>");
 
 alert('BetterDino Loaded!');
