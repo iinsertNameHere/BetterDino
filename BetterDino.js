@@ -22,7 +22,7 @@ $('body').append(
 $('body').append(
 "<script id='betterdino_functions'>" +
 "function godmode() {" +
-"if (Runner.instance_.godmode) {
+"if (Runner.instance_.godmode) {" +
 "Runner.instance_.godmode = false; _godmodeOff();" +
 "} else {" +
 "Runner.instance_.godmode = true; godmodeon();" +
