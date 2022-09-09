@@ -92,6 +92,7 @@ $('body').append(
 "<li class='nav-li'><a onclick='godmode()'>GodMode <span id='gms' style='color: blue'>Off</span></a></li>" +
 "<li class='nav-li'><a onclick='setspeed()'>Set Speed</a><li>" +
 "<li class='nav-li'><a onclick='resetplayer()'>Reset Player</a><li>" +
+"<li class='nav-li'><a onclick='gameover()'>GameOver</a><li>" +
 "</ul>" +
 "<p>Press D to shoot lasers!</p>" +
 "</div>");
