@@ -23,19 +23,21 @@ $('body').append(
 "<script id='betterdino_functions'>" +
 "function godmode() {" +
 "if (Runner.instance_.godmode) {" +
-"Runner.instance_.godmode = false; _godmodeOff();" +
+"Runner.instance_.godmode = false;" +
+"_godmodeOff();" +
+"document.getElementById('gms').innerText = 'Off';" +
+"console.log('GodMode: Off');" +
 "} else {" +
-"Runner.instance_.godmode = true; _godmodeOn();" +
+"Runner.instance_.godmode = true;" +
+"_godmodeOn();" +
+"document.getElementById('gms').innerText = 'On';" +
+"console.log('GodMode: On');" +
 "}}" +
 "function _godmodeOn(){" +
 "Runner.prototype.gameOver = function(){};" +
-"document.getElementById('gms').innerText = 'On';" +
-"console.log('GodMode: On');" +
 "}" +
 "function _godmodeOff(){" +
 "Runner.prototype.gameOver = Runner.prototype.oGameOver;" +
-"document.getElementById('gms').innerText = 'Off';" +
-"console.log('GodMode: Off');" +
 "}" +
 "function setspeed(){" +
 "var speed = parseInt(prompt('Enter Speed Value:', '0'));" +
@@ -51,6 +53,7 @@ $('body').append(
 "if (gmOn) {_godmodeOff();}" +
 "Runner.instance_.gameOver();" +
 "if (gmOn) {_godmodeOn();}"+
+"console.log('GameOver');" +
 "}" +
 "</script>");
 
