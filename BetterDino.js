@@ -6,8 +6,8 @@ Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
 Runner.instance_.godmode = false;
 
 var contentDiv = document.createElement('div');
-$('body').append(
-"<script id='betterdino_def'>" +
+document.body.append(
+"<script id='betterdino_laser'>" +
 "function drawlaser() {" +
 "if (Runner.instance_.horizon.obstacles.length>0){" +
 "Runner.instance_.clearCanvas=function(){};" +
@@ -21,7 +21,7 @@ $('body').append(
 "}}" +
 "</script>");
 
-$('body').append(
+document.body.append(
 "<script id='betterdino_functions'>" +
 "function godmode() {" +
 "if (Runner.instance_.godmode) {" +
@@ -84,7 +84,7 @@ $('body').append(
 "}" +
 "</script>");
 
-$('head').append(
+document.head.append(
 "<style id='betterdino_style'>" +
 "#top {" +
 "position: fixed;" +
@@ -144,7 +144,7 @@ $('head').append(
 ".dropdown:hover .dropbtn {background-color: #3e8e41;}\n" +
 "</style>");
 
-$('body').append(
+document.body.append(
 "<div id='top'>" +
 "<ul class='nav-ul'>" +
 "<li class='nav-li'><a onclick='godmode()'>GodMode <span id='gms' style='color: #04AA6D'>Off</span></a></li>" +
