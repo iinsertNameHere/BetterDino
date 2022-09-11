@@ -5,8 +5,7 @@ Runner.prototype.oGameOver = Runner.prototype.gameOver;
 Runner.instance_.oSpeed = Runner.instance_.currentSpeed;
 Runner.instance_.godmode = false;
 
-var contentDiv = document.createElement('div');
-document.body.append(
+$("body").append(
 "<script id='betterdino_laser'>" +
 "function drawlaser() {" +
 "if (Runner.instance_.horizon.obstacles.length>0){" +
@@ -21,7 +20,7 @@ document.body.append(
 "}}" +
 "</script>");
 
-document.body.append(
+$("body").append(
 "<script id='betterdino_functions'>" +
 "function godmode() {" +
 "if (Runner.instance_.godmode) {" +
@@ -84,7 +83,7 @@ document.body.append(
 "}" +
 "</script>");
 
-document.head.append(
+$("head").append(
 "<style id='betterdino_style'>" +
 "#top {" +
 "position: fixed;" +
@@ -144,7 +143,7 @@ document.head.append(
 ".dropdown:hover .dropbtn {background-color: #3e8e41;}\n" +
 "</style>");
 
-document.body.append(
+$("body").append(
 "<div id='top'>" +
 "<ul class='nav-ul'>" +
 "<li class='nav-li'><a onclick='godmode()'>GodMode <span id='gms' style='color: #04AA6D'>Off</span></a></li>" +
