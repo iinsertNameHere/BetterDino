@@ -12,4 +12,4 @@ BetterDino is a CheatMenu for [chromedino.com](https://chromedino.com/).
 ![Link Page](https://raw.githubusercontent.com/iinsertNameHere/BetterDino/main/link.png)
 4. Go to [chromedino.com](https://chromedino.com/) and open the Bookmark.
 5. BetterDino should now be loaded.
-![Link Page](https://raw.githubusercontent.com/iinsertNameHere/BetterDino/main/link.png)
+![Link Page](https://raw.githubusercontent.com/iinsertNameHere/BetterDino/main/final.png)
