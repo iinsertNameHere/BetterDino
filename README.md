@@ -8,7 +8,7 @@ BetterDino is a CheatMenu for [chromedino.com](https://chromedino.com/).
 
 1. Download [BetterDino.html](https://github.com/iinsertNameHere/BetterDino/blob/main/BetterDino.html).
 2. Open [BetterDino.html](https://github.com/iinsertNameHere/BetterDino/blob/main/BetterDino.html) in your Browser.
-3. Add the link on the page to your BrowserBookmarks.
+3. Add the link on the page to your BrowserBookmarks by right clicking it and choosing "Bookmark Link".
 
 ![Link Page](https://raw.githubusercontent.com/iinsertNameHere/BetterDino/main/link.png)
 
